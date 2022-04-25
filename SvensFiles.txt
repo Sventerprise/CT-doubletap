@@ -1,0 +1,4 @@
+See 
+- js / main.js
+- how-it-works.html (sections indicated within)
+- how-it-works.css (sections indicated within)

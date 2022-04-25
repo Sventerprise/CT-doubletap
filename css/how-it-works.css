@@ -113,6 +113,7 @@
 
 /* end Jose */
   
+/* Sven */
 .Content2 { 
   grid-area: Content2;
   display: flex;
@@ -169,12 +170,29 @@
   font-size: .8rem;
 }
 
-.Content1 {  grid-area: Content1;
+.content3 { 
+  grid-area: content3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3rem;
+}
+.content3 .how__card-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/* animation: wait until within viewport */
+[data-inViewport="scaleIn"].is-inViewport {    
+  animation: scaleIn .3s linear 0s 1 normal forwards;
 }
 
-.explore { grid-area: explore; }
-
-.payments { grid-area: payments; }
+@keyframes scaleIn {
+  0% {  }
+  80% { transform: scale(1.2); }
+  100% {transform: scale(1);}
+}
+/* end sven */
 
 /* Start craig's footer */
 .footer { 
@@ -222,26 +240,4 @@
   font-weight: 10;
   padding-top:15px
 }
-
-.content3 { 
-  grid-area: content3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 3rem;
-}
-.content3 .how__card-header {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-/* animation: wait until within viewport */
-[data-inViewport="scaleIn"].is-inViewport {    
-  animation: scaleIn .3s linear 0s 1 normal forwards;
-}
-
-@keyframes scaleIn {
-  0% {  }
-  80% { transform: scale(1.2); }
-  100% {transform: scale(1);}
-}
+/* end craig */
